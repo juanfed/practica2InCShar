@@ -44,7 +44,7 @@
                 <td class="auto-style6" style="text-align: right">Carné: </td>
                 <td class="auto-style2">
                     <asp:TextBox ID="txtCodi" runat="server" ReadOnly="True" Width="212px"></asp:TextBox>
-                    <asp:ImageButton ID="ibtnBusc" runat="server" Height="21px" ImageUrl="~/Imagenes/lupa.png" Width="23px" />
+                    <asp:ImageButton ID="ibtnBusc" runat="server" Height="21px" ImageUrl="~/Imagenes/lupa.png" Width="23px" OnClick="ibtnBusc_Click" />
                 </td>
             </tr>
             <tr>

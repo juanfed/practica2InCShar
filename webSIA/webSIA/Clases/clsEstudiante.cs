@@ -33,9 +33,11 @@ namespace webSIA.Clases
         // Punto d. Constructor sin parámetros
         // Inicializa numéricos en 0, strings vacíos y la cadena de conexión
         // ====================================================
+
+        //  strCnx = "Data Source = .\\SQLEXPRESS; Initial Catalog = bdEstudITM; Integrated Security = SSPI;
         public clsEstudiante()
         {
-            strCnx = "Data Source = .\\SQLEXPRESS; Initial Catalog = bdEstudITM; Integrated Security = SSPI;";
+            strCnx = "Data Source=localhost; Initial Catalog=bdEstudITM; Integrated Security=SSPI;";
             Codigo = 0;
             Programa = 0;
             nroDoc = 0;
@@ -55,7 +57,7 @@ namespace webSIA.Clases
         public clsEstudiante(int Carnet, int idPrograma, int nroDocu, int tipDocu,
                              string Nombres, string Apellidos, bool Activo, string Observ)
         {
-            strCnx = "Data Source = .\\SQLEXPRESS; Initial Catalog = bdEstudITM; Integrated Security = SSPI;";
+            strCnx = "Data Source=localhost; Initial Catalog=bdEstudITM; Integrated Security=SSPI;";
             this.Codigo = Carnet;
             this.Programa = idPrograma;
             this.nroDoc = nroDocu;
